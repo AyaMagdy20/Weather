@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather</title>
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="nav-container">
+      <div class="container">
+        <div class="row">
+          <nav
+            class="navbar navbar-expand-lg navbar-light bg-transparent py-4 px-5"
+          >
+            <div class="container">
+              <a class="navbar-brand text-white" href="#"
+                ><img src="./img/logo@2x.png" alt="" width="70"
+              /></a>
+              <a class="navbar-brand text-white" href="#"
+                ><p class="fw-bold title">Weather</p>
+                <p class="tagline">Tagline goes here</p></a
+              >
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a
+                      class="nav-link active text-white"
+                      aria-current="page"
+                      href="#"
+                      >Home</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="#">News</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="#">Photos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="#">Live Cameras</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <section class="city-name py-4">
+      <div class="container">
+        <div class="row">
+          <div class="form">
+            <div class="col-md-12 m-auto">
+              <form class="mb-3 position-relative">
+                <input
+                  type="text"
+                  class="form-control form-1 mt-5"
+                  id="city"
+                  placeholder="Find Your Location..."
+                />
+                <button
+                  type="button"
+                  class="btn mb-3 rounded-5 px-5 text-white position-absolute"
+                  id="btn"
+                >
+                  Find
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="row g-0 mt-5" id="forecast-content">
+          <div class="col-md-4 forecast-card">
+            <div class="first w-100">
+              <div class="date d-flex justify-content-between">
+                <span id="day" class="dayName">Saterday</span>
+                <div class="month-data">
+                  <span id="date" class="month-num">20</span
+                  ><span class="month"> January</span>
+                </div>
+              </div>
+              <div class="forecast text-white">
+                <p id="location">Cairo</p>
+                <div
+                  class="degree d-flex justify-content-between align-items-center"
+                >
+                  <span id="degree">23oC</span>
+                  <img src="./img/113.png" alt="" id="firstImg" />
+                </div>
+                <p class="text-primary mt-4" id="status">clear</p>
+                <div class="icons d-flex justify-content-start">
+                  <div class="umberella icon">
+                    <img src="./img/icon-umberella.png" alt="" width="20" />
+                    <span id="humidity">20%</span>
+                  </div>
+                  <div class="wind icon">
+                    <img src="./img/icon-wind.png" alt="" width="20" />
+                    <span id="speed">18km/h</span>
+                  </div>
+                  <div class="compass icon">
+                    <img src="./img/icon-compass.png" alt="" width="20" />
+                    <span id="direction">East</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 forecast-card-2">
+            <div class="first w-100">
+              <div class="date-2 d-flex justify-content-center">
+                <span class="nxtDay">Monday</span>
+              </div>
+              <div class="forecast-2 text-white">
+                <div class="degree text-center">
+                  <img src="./img/113.png" alt="" class="img-data" />
+                  <p class="degree-2">23oC</p>
+                  <p class="num">14.1o</p>
+                  <p class="txt text-primary">Patchy rain possible</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 forecast-card-2 new-style">
+            <div class="first w-100 third">
+              <div class="date-2 d-flex justify-content-center date-3">
+                <span class="nxtDay">Tuesday</span>
+              </div>
+              <div class="forecast-2 text-white forecast-3">
+                <div class="degree text-center">
+                  <!-- <i class="fa-solid fa-cloud-sun-rain rain py-4"></i> -->
+                  <img src="./img/113.png" alt="" class="img-data" />
+                  <p class="degree-2">23oC</p>
+                  <p class="num">14.1o</p>
+                  <p class="txt text-primary">Patchy rain possible</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="email-section py-2">
+      <div class="container">
+        <div class="row d-flex justify-content-center align-items-baseline">
+          <div class="col-md-8">
+            <div class="email-search form">
+              <form class="mb-3 position-relative">
+                <input
+                  type="email"
+                  class="form-control form-1 mt-5"
+                  id="exampleFormControlInput1"
+                  placeholder="Enter your email to subscribe..."
+                />
+                <button
+                  type="submit"
+                  class="btn mb-3 rounded-5 px-5 text-white position-absolute"
+                >
+                  Find
+                </button>
+              </form>
+              <p class="text-light">
+                Copyright 2014 Company name. Designed by Themezy. All rights
+                reserved
+              </p>
+            </div>
+          </div>
+          <div
+            class="col-md-4 d-flex justify-content-center align-items-center"
+          >
+            <div
+              class="social d-flex justify-content-center align-items-center"
+            >
+              <div class="facebook logo rounded-circle">
+                <i class="fa-brands fa-facebook-f"></i>
+              </div>
+              <div class="twitter logo rounded-circle">
+                <i class="fa-brands fa-twitter"></i>
+              </div>
+              <div class="google logo rounded-circle">
+                <i class="fa-brands fa-google-plus-g"></i>
+              </div>
+              <div class="pinterest logo rounded-circle">
+                <i class="fa-brands fa-pinterest-p"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
